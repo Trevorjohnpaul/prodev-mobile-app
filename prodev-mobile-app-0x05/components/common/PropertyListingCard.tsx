@@ -1,8 +1,8 @@
-import { View, Text, ImageBackground } from "react-native";
+import { View, Text, StyleSheet, ImageBackground } from "react-native";
 import EvilIcons from "@expo/vector-icons/EvilIcons";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
-import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { PropertyListingProps } from "@/interfaces";
+import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { styles } from "@/styles/_propertyCardStyle";
 
 const PropertyListingCard: React.FC<PropertyListingProps> = ({
@@ -34,7 +34,6 @@ const PropertyListingCard: React.FC<PropertyListingProps> = ({
             <MaterialIcons name="star-rate" size={40} color="#FAC02B" />
             <Text style={styles.rateText}>{rate}</Text>
           </View>
-
           <View style={styles.cardGroup}>
             <View style={styles.cardGroup}>
               <Text style={styles.cardLargeText}>{propertyName}</Text>
@@ -42,7 +41,6 @@ const PropertyListingCard: React.FC<PropertyListingProps> = ({
                 {location.street}, {location.city}, {location.country}
               </Text>
             </View>
-
             <View style={styles.priceGroup}>
               <Text style={styles.priceText}>
                 {currency}
