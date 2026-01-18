@@ -1,1 +1,1 @@
-import { styles } from "@/styles/_joinstyle";
+import { styles } from "@/styles/_join";
